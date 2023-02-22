@@ -15,10 +15,13 @@ while running:
     #setze die Hintergrundfarbe auf (255,255,255) = (R,G,B) = weiss
     screen.fill((255,255,255))
     
-    #male einen Kreis mit (Screen, Farbe, Kreismittelpunkt, Radius)
-    #beispiele: https://www.pygame.org/docs/ref/draw.html#pygame.draw
-    pygame.draw.circle(screen, (0,0,255), (250,250), 75)
-    pygame.draw.rect(screen, (255,0,0),(10,10,50,50), 50)
+    rot = (255,0,0)
+    blau = (0,0,255)
+    #zeichne einen Kreis mit (Screen, Farbe, Kreismittelpunkt, Radius)
+    pygame.draw.circle(screen, blau, (250,250), 75)
+    #zeichne ein Rechteck mit (Screen, Farbe, (von x, von y, bis x, bis y), Breite)
+    pygame.draw.rect(screen, rot, (10,10,50,50), 50)
+    #weitere Zeichenfunktionen: https://www.pygame.org/docs/ref/draw.html#pygame.draw
     
     #erneuere die Anzeige auf dem Bildschirm (lade Buffer)
     pygame.display.flip()
