@@ -19,8 +19,8 @@ while running:
     blau = (0,0,255)
     #zeichne einen Kreis mit (Screen, Farbe, Kreismittelpunkt, Radius)
     pygame.draw.circle(screen, blau, (250,250), 75)
-    #zeichne ein Rechteck mit (Screen, Farbe, (von x, von y, bis x, bis y), Breite)
-    pygame.draw.rect(screen, rot, (10,10,50,50), 50)
+    #zeichne ein Rechteck mit (Screen, Farbe, (left, top, breite, hoehe))
+    pygame.draw.rect(screen, rot, (10,10,50,50))
     #weitere Zeichenfunktionen: https://www.pygame.org/docs/ref/draw.html#pygame.draw
     
     #erneuere die Anzeige auf dem Bildschirm (lade Buffer)
